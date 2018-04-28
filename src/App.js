@@ -1,18 +1,40 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CreatePost from './create_post/CreatePost.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      post: {
+        header: '',
+        content: '',
+        footer: '',
+      }
+    }
+
+    this.handlePostSubmit = this.handlePostSubmit.bind(this);
+  }
+
+  handlePostSubmit(posted) {
+    this.setState({
+      post: {
+        header: posted.post.header,
+        content: posted.post.content,
+        footer: posted.post.footer
+      }
+    });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <CreatePost 
+          onSubmit={this.handlePostSubmit}
+          post={this.state.post}
+        />
+        {this.state.post.header} {this.state.post.content} {this.state.post.footer} 
       </div>
     );
   }
