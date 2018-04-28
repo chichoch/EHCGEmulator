@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './CreatePost.css';
+import ReactDOM from 'react-dom';
+import TextareaAutosize from 'react-autosize-textarea';
 
 class CreatePost extends Component {
   constructor(props) {
@@ -45,7 +47,11 @@ class CreatePost extends Component {
         <div className="CreatePostHeader">
         Hej Eriks <input type="text" value={this.state.header} onChange={this.handleHeaderChange} />-grupp!
         </div>
-        <textarea type="text" value={this.state.content} onChange={this.handleContentChange} />
+        <TextareaAutosize
+          rows={3}
+          onChange={this.handleContentChange}
+          placeholder=''
+        />
         <div className="CreatePostFooter">
           <input type="text" value={this.state.footer} onChange={this.handleFooterChange} /> +/-?
         </div>
