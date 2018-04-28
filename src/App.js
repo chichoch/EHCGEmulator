@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <CreatePost 
+        <CreatePost className="CreatePost"
           onSubmit={this.handlePostSubmit}
           post={this.state.post}
         />

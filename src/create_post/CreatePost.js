@@ -41,14 +41,17 @@ class CreatePost extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="CreatePost" onSubmit={this.handleSubmit}>
+        <div className="CreatePostHeader">
         Hej Eriks <input type="text" value={this.state.header} onChange={this.handleHeaderChange} />-grupp!
-        <br />  <br />
+        </div>
         <textarea type="text" value={this.state.content} onChange={this.handleContentChange} />
-        <br /> <br />
-        <input type="text" value={this.state.footer} onChange={this.handleFooterChange} /> +/-?
-        <br />
-        <input type="submit" value="Skicka" />
+        <div className="CreatePostFooter">
+          <input type="text" value={this.state.footer} onChange={this.handleFooterChange} /> +/-?
+        </div>
+        <div className="CreatePostSubmit">
+          <input type="submit" value="Skicka" />
+        </div>
       </form>
     );
   }

@@ -1,0 +1,17 @@
+.CreatePost {
+  
+}
+
+.CreatePostHeader {
+  
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  overflow: hidden;
+}
+
+.CreatePostSubmit {
+  float: right;
+}
