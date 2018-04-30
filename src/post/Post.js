@@ -14,7 +14,15 @@ class Post extends Component {
   render() {
     return (
       <div className="Post">
-        Placeholder
+        <div className="PostHeader">
+          Hej Eriks {this.props.post.header}-grupp!
+        </div>
+        <div className="PostContent">
+          {this.props.post.content}
+        </div>
+        <div className="PostFooter">
+          {this.props.post.footer} +/-?
+        </div>
       </div>
     );
   }

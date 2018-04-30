@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CreatePost from './create_post/CreatePost.js';
+import Post from './post/Post.js';
 
 class App extends Component {
   constructor(props) {
@@ -11,19 +12,18 @@ class App extends Component {
         header: '',
         content: '',
         footer: '',
-      }
+      },
+      posts: []
     }
 
     this.handlePostSubmit = this.handlePostSubmit.bind(this);
   }
 
   handlePostSubmit(posted) {
+    var posts = this.state.posts;
+    posts.push(posted.post);
     this.setState({
-      post: {
-        header: posted.post.header,
-        content: posted.post.content,
-        footer: posted.post.footer
-      }
+      posts: posts
     });
   }
 
@@ -34,7 +34,7 @@ class App extends Component {
           onSubmit={this.handlePostSubmit}
           post={this.state.post}
         />
-        {this.state.post.header} {this.state.post.content} {this.state.post.footer} 
+        {this.state.posts.map((obj, i) => <Post post={obj} key={i} />)}
       </div>
     );
   }

@@ -39,24 +39,41 @@ class CreatePost extends Component {
         }
       });
       event.preventDefault();
+      this.setState({
+        header: '',
+        content: '',
+        footer: ''
+      });
   }
 
   render() {
     return (
       <form className="CreatePost" onSubmit={this.handleSubmit}>
         <div className="CreatePostHeader">
-        Hej Eriks <input type="text" value={this.state.header} onChange={this.handleHeaderChange} />-grupp!
+        Hej Eriks 
+          <input 
+            type="text" 
+            value={this.state.header} 
+            onChange={this.handleHeaderChange} />
+        -grupp!
         </div>
         <TextareaAutosize
           rows={3}
           onChange={this.handleContentChange}
+          value={this.state.content}
           placeholder=''
         />
         <div className="CreatePostFooter">
-          <input type="text" value={this.state.footer} onChange={this.handleFooterChange} /> +/-?
+          <input 
+            type="text" 
+            value={this.state.footer} 
+            onChange={this.handleFooterChange} />
+          +/-?
         </div>
         <div className="CreatePostSubmit">
-          <input type="submit" value="Skicka" />
+          <input 
+            type="submit" 
+            value="Skicka" />
         </div>
       </form>
     );
