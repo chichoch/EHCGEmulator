@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CreatePost from './create_post/CreatePost.js';
 import Post from './post/Post.js';

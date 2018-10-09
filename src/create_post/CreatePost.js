@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './CreatePost.css';
-import ReactDOM from 'react-dom';
 import TextareaAutosize from 'react-autosize-textarea';
 
 class CreatePost extends Component {
