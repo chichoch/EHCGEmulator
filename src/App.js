@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreatePostComponent from './create_post/CreatePostComponent';
-import PostComponent from './post/PostComponent';
+import CreatePostComponent from './components/create_post/CreatePostComponent';
+import PostComponent from './components/post/PostComponent';
 
 class App extends Component {
   constructor(props) {
