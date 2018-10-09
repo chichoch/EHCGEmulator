@@ -19,11 +19,7 @@ class Post extends Component {
   }
 
   componentDidMount() {
-    const interval = getRandomTime();
-    console.log(interval);
-    setTimeout(() => {
-      this.addComments();
-    }, interval);
+    this.generateRecursiveTimeoutWithRandomInterval();
   }
   
   addComments = () => {
@@ -34,6 +30,10 @@ class Post extends Component {
       comments: comments,
       commentIndex: commentIndex,
     });
+    this.generateRecursiveTimeoutWithRandomInterval();
+  }
+
+  generateRecursiveTimeoutWithRandomInterval = () => {
     const interval = getRandomTime();
     console.log(interval);
     setTimeout(() => {
