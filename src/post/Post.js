@@ -7,21 +7,40 @@ class Post extends Component {
     this.state = {
       header: this.props.post.header,
       content: this.props.post.content,
-      footer: this.props.post.footer
+      footer: this.props.post.footer,
+      comments: [],
+      commentIndex: 0,
     }
   }
 
+  componentDidMount() {
+    setInterval(() => {
+      var comments = this.state.comments;
+      var commentIndex = this.state.commentIndex + 1;
+      comments.push('Test'+commentIndex);
+      this.setState({
+        comments: comments,
+        commentIndex: commentIndex,
+      })
+    }, 1000)
+  }
+
   render() {
+    const {post} = this.props;
+    const {comments} = this.state;
     return (
       <div className="Post">
         <div className="PostHeader">
-          Hej Eriks {this.props.post.header}-grupp!
+          Hej Eriks {post.header}-grupp!
         </div>
         <div className="PostContent">
-          {this.props.post.content}
+          {post.content}
         </div>
         <div className="PostFooter">
-          {this.props.post.footer} +/-?
+          {post.footer} +/-?
+        </div>
+        <div className="Comments">
+          {comments.map((obj) => <div>{obj}</div>)}
         </div>
       </div>
     );
