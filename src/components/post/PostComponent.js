@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './PostComponent.css';
-import CommentComponent from '../comment/CommentComponent'
+import Comment from '../../model/Comment';
+import CommentComponent from '../comment/CommentComponent';
+import CommentGenerator from '../../model/CommentGenerator';
 
 const getRandomTime = () => {
   return Math.floor(Math.random() * 5000) + 1000;
@@ -19,6 +21,8 @@ class PostComponent extends Component {
     }
   }
 
+  commentGenerator = new CommentGenerator();
+
   componentDidMount() {
     this.generateRecursiveTimeoutWithRandomInterval();
   }
@@ -26,7 +30,7 @@ class PostComponent extends Component {
   addComments = () => {
     var comments = this.state.comments;
     var commentIndex = this.state.commentIndex + 1;
-    comments.push(<CommentComponent author="Author" content="Test" />);
+    comments.push(this.commentGenerator.getRandomComment());
     this.setState({
       comments: comments,
       commentIndex: commentIndex,
@@ -57,7 +61,7 @@ class PostComponent extends Component {
           {post.footer} +/-?
         </div>
         <div className="Comments">
-          {comments.map((obj, i) => <div>{obj}</div>)}
+          {comments.map((obj, i) => <CommentComponent comment={obj} key={i}/>)}
         </div>
       </div>
     );

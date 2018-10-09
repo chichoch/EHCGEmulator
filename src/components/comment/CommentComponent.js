@@ -3,14 +3,14 @@ import './CommentComponent.css';
 
 export default class CommentComponent extends Component {
   render() {
-    const {author, content} = this.props;
+    const {comment} = this.props;
     return (
       <div className="Comment">
         <div className="CommentAuthor">
-          {author}
+          {comment.getAuthor()}
         </div>
         <div className="CommentContent">
-          {content}
+          {comment.getContent()}
         </div>
       </div>
     );
