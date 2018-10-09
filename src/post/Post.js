@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Post.css';
 
+const getRandomTime = () => {
+  return Math.floor(Math.random() * 10000) + 1000;
+};
+
 class Post extends Component {
   constructor(props) {
     super(props);
@@ -10,19 +14,31 @@ class Post extends Component {
       footer: this.props.post.footer,
       comments: [],
       commentIndex: 0,
+      intervalId: 0,
     }
   }
 
   componentDidMount() {
-    setInterval(() => {
-      var comments = this.state.comments;
-      var commentIndex = this.state.commentIndex + 1;
-      comments.push('Test'+commentIndex);
-      this.setState({
-        comments: comments,
-        commentIndex: commentIndex,
-      })
-    }, 1000)
+    const interval = getRandomTime();
+    console.log(interval);
+    setTimeout(() => {
+      this.addComments();
+    }, interval);
+  }
+  
+  addComments = () => {
+    var comments = this.state.comments;
+    var commentIndex = this.state.commentIndex + 1;
+    comments.push('Test'+commentIndex);
+    this.setState({
+      comments: comments,
+      commentIndex: commentIndex,
+    });
+    const interval = getRandomTime();
+    console.log(interval);
+    setTimeout(() => {
+      this.addComments();
+    }, interval);
   }
 
   render() {
