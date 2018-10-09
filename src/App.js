@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreatePost from './create_post/CreatePost.js';
-import Post from './post/Post.js';
+import CreatePostComponent from './create_post/CreatePostComponent';
+import PostComponent from './post/PostComponent';
 
 class App extends Component {
   constructor(props) {
@@ -29,11 +29,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <CreatePost className="CreatePost"
+        <CreatePostComponent className="CreatePost"
           onSubmit={this.handlePostSubmit}
           post={this.state.post}
         />
-        {this.state.posts.map((obj, i) => <Post post={obj} key={i} />)}
+        {this.state.posts.map((obj, i) => <PostComponent post={obj} key={i} />)}
       </div>
     );
   }

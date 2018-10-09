@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './Post.css';
+import './PostComponent.css';
+import CommentComponent from '../comment/CommentComponent'
 
 const getRandomTime = () => {
   return Math.floor(Math.random() * 5000) + 1000;
 };
 
-class Post extends Component {
+class PostComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +26,7 @@ class Post extends Component {
   addComments = () => {
     var comments = this.state.comments;
     var commentIndex = this.state.commentIndex + 1;
-    comments.push('Test'+commentIndex);
+    comments.push(<CommentComponent author="Author" content="Test" />);
     this.setState({
       comments: comments,
       commentIndex: commentIndex,
@@ -56,11 +57,11 @@ class Post extends Component {
           {post.footer} +/-?
         </div>
         <div className="Comments">
-          {comments.map((obj) => <div>{obj}</div>)}
+          {comments.map((obj, i) => <div>{obj}</div>)}
         </div>
       </div>
     );
   }
 }
 
-export default Post;
+export default PostComponent;

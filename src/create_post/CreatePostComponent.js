@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './CreatePost.css';
-import TextareaAutosize from 'react-autosize-textarea';
+import './CreatePostComponent.css';
+import TextareaAutosize from 'react-autosize-textarea/lib';
 
-class CreatePost extends Component {
+export default class CreatePostComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -78,5 +78,3 @@ class CreatePost extends Component {
     );
   }
 }
-
-export default CreatePost;
