@@ -30,14 +30,14 @@ class Post extends Component {
       comments: comments,
       commentIndex: commentIndex,
     });
-    this.generateRecursiveTimeoutWithRandomInterval();
   }
 
   generateRecursiveTimeoutWithRandomInterval = () => {
+    this.addComments();
     const interval = getRandomTime();
     console.log(interval);
     setTimeout(() => {
-      this.addComments();
+      this.generateRecursiveTimeoutWithRandomInterval();
     }, interval);
   }
 
