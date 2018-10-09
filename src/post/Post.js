@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Post.css';
 
 const getRandomTime = () => {
-  return Math.floor(Math.random() * 10000) + 1000;
+  return Math.floor(Math.random() * 5000) + 1000;
 };
 
 class Post extends Component {
