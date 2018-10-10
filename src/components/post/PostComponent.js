@@ -24,7 +24,9 @@ class PostComponent extends Component {
   commentGenerator = new CommentGenerator();
 
   componentDidMount() {
-    this.generateRecursiveTimeoutWithRandomInterval();
+    setTimeout(() => {
+      this.generateRecursiveTimeoutWithRandomInterval();
+    }, getRandomTime());
   }
   
   addComments = () => {
