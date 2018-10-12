@@ -16,16 +16,22 @@ const getRandomNumberBetween = (min, max) => {
 }
 
 const comments = [
-  { 
-    'author' : 'Author1',
+  {
+    'author' : {
+      'name': 'Fjanton Smuts',
+      'img': require('../pictures/fjanton.jpg'),
+    },
     'comments': [
-      'content1',
-      'content2',
-      'content3',
+      'Jag tycker inte att det du säger är speciellt konstruktivt, så jag vill inte att du håller på sådär din jävla idiot.',
+      'Jag tycker inte att det du säger är speciellt konstruktivt, så jag vill inte att du håller på sådär din jävla idiot.',
+      'Jag tycker inte att det du säger är speciellt konstruktivt, så jag vill inte att du håller på sådär din jävla idiot.',
     ]
   },
   {
-    'author' : 'Author2',
+    'author' : {
+      'name': 'Author2',
+      'img': ''
+    },
     'comments': [
       'content1',
       'content2',
@@ -34,7 +40,10 @@ const comments = [
     ]
   },
   {
-    'author' : 'Author3',
+    'author' : {
+      'name': 'Author3',
+      'img': ''
+    },
     'comments': [
       'content1',
       'content2',
