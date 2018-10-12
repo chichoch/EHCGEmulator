@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './PostComponent.css';
+import PostHeaderComponent from './PostHeaderComponent';
 import Comment from '../../model/Comment';
 import CommentComponent from '../comment/CommentComponent';
 import CommentGenerator from '../../model/CommentGenerator';
@@ -28,7 +29,7 @@ class PostComponent extends Component {
       this.generateRecursiveTimeoutWithRandomInterval();
     }, getRandomTime());
   }
-  
+
   addComments = () => {
     var comments = this.state.comments;
     var commentIndex = this.state.commentIndex + 1;
@@ -53,15 +54,15 @@ class PostComponent extends Component {
     const {comments} = this.state;
     return (
       <div className="Post">
-        <div className="PostHeader">
-          Hej Eriks {post.header}-grupp!
-        </div>
+        <PostHeaderComponent />
         <div className="PostContent">
+          Hej Eriks {post.header}-grupp!
+          <br/><br/>
           {post.content}
-        </div>
-        <div className="PostFooter">
+          <br/><br/>
           {post.footer} +/-?
         </div>
+        <hr/>
         <div className="Comments">
           {comments.map((obj, i) => <CommentComponent comment={obj} key={i}/>)}
         </div>

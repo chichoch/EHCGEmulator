@@ -1,9 +1,12 @@
 .CreatePost {
-  
+ background: white;
+ padding: 15px;
+ border-radius: 8px;
+ width: 25rem;
 }
 
 .CreatePostHeader {
-  
+
 }
 
 textarea {
@@ -13,5 +16,18 @@ textarea {
 }
 
 .CreatePostSubmit {
-  float: right;
+  position: relative;
+}
+
+button {
+  background-color: #4267b2;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

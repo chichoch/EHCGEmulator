@@ -49,10 +49,10 @@ export default class CreatePostComponent extends Component {
     return (
       <form className="CreatePost" onSubmit={this.handleSubmit}>
         <div className="CreatePostHeader">
-        Hej Eriks 
-          <input 
-            type="text" 
-            value={this.state.header} 
+        Hej Eriks
+          <input
+            type="text"
+            value={this.state.header}
             onChange={this.handleHeaderChange} />
         -grupp!
         </div>
@@ -63,16 +63,17 @@ export default class CreatePostComponent extends Component {
           placeholder=''
         />
         <div className="CreatePostFooter">
-          <input 
-            type="text" 
-            value={this.state.footer} 
+          <input
+            type="text"
+            value={this.state.footer}
             onChange={this.handleFooterChange} />
           +/-?
         </div>
         <div className="CreatePostSubmit">
-          <input 
-            type="submit" 
-            value="Skicka" />
+          <button
+            type="submit">
+            <h3>Publicera</h3>
+          </button>
         </div>
       </form>
     );
