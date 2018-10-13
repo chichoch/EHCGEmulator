@@ -6,6 +6,7 @@
     "react": "^16.5.2",
     "react-autosize-textarea": "^5.0.0",
     "react-dom": "^16.5.2",
+    "react-transition-group": "1.2.0",
     "styled-components": "^3.4.10"
   },
   "devDependencies": {

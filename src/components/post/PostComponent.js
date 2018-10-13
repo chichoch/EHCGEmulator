@@ -4,6 +4,7 @@ import PostHeaderComponent from './PostHeaderComponent';
 import Comment from '../../model/Comment';
 import CommentComponent from '../comment/CommentComponent';
 import CommentGenerator from '../../model/CommentGenerator';
+import { CSSTransitionGroup } from 'react-transition-group'
 
 const getRandomTime = () => {
   return Math.floor(Math.random() * 5000) + 1000;
@@ -52,20 +53,27 @@ class PostComponent extends Component {
     const {post} = this.props;
     const {comments} = this.state;
     return (
-      <div className="Post">
-        <PostHeaderComponent />
-        <div className="PostContent">
-          Hej Folkets {post.header}-grupp!
-          <br/><br/>
-          {post.content}
-          <br/><br/>
-          {post.footer} +/-?
+      <CSSTransitionGroup
+        transitionName="example"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}>
+        <div className="Post">
+          <PostHeaderComponent />
+          <div className="PostContent">
+            Hej Folkets {post.header}-grupp!
+            <br/><br/>
+            {post.content}
+            <br/><br/>
+            {post.footer} +/-?
+          </div>
+          <hr/>
+          <div className="Comments">
+            {comments.map((obj, i) => <CommentComponent comment={obj} key={i}/>)}
+          </div>
         </div>
-        <hr/>
-        <div className="Comments">
-          {comments.map((obj, i) => <CommentComponent comment={obj} key={i}/>)}
-        </div>
-      </div>
+      </CSSTransitionGroup>
     );
   }
 }
