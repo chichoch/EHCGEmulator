@@ -17,6 +17,7 @@
   padding: 9px;
   background-color: #ebedf0;
   border-radius: 18px;
+  white-space: pre-wrap;
 }
 
 b {

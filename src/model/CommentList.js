@@ -101,6 +101,7 @@ export const comments = [
       'Jag älskar fan gitarrsolon och gitarrister.',
       'Någon som behöver underhållning på sitt bröllop?',
       'Jag är vegan.',
+      'Är det här en reflört?'
     ]
   },
   {
@@ -124,11 +125,14 @@ export const comments = [
     },
     'comments': [
       'Vad nå? 😮',
-      'Mina senaste flirtar har jag använt följande tekniker:\n • stirra lite, håll blicken 1,5 sekund och le • följa på Instagram och skriva där • kolla i skolkatalogen och leta upp den snyggaste och se om han fortfarande är snygg, adda på fb och vara ihop 3 år\n • gå fram och fråga om personen har partner, om inte fråga om den vill hångla',
-      'Rapport från Hisingen: regnade men blåste för mycket för att ha paraply. Affären Digital Life tog inte kort (ironiskt nog) så fick ta ut pengar vilket tog en jävla tid för damerna innan hade uppenbarligen aldrig använt en bankomat. Köpte en falafelrulle som tog väldigt länge att få pga båda som jobbade där arbetade med en hand eftersom de båda pratade i telefon utan headset. Var så mycket sås i den så det droppade på golvet på spårvagnen och jag halkade i det. En elak tjej skrattade åt mig. Längtar hem till Linné.',
-      'Reflektion från tåget: Grums är södra Sveriges version av Piteå. Motargument mottages gärna.',
-      'Rykten säger att i Årjäng röker man tobak genom en bong fylld med sprit istället för vatten för att bli extra full.',
-      'Hej! Vad gjorde ni igår? Var det någon annan än mig som var på REGGAESPELNING?',
+      'Mina senaste flirtar har jag använt följande tekniker:\n • stirra lite, håll blicken 1,5 sekund och le\n • följa på Instagram och skriva där\n • kolla i skolkatalogen och leta upp den snyggaste och se om han fortfarande är snygg, adda på fb och vara ihop 3 år\n • gå fram och fråga om personen har partner, om inte fråga om den vill hångla',
+      'Håller med!!!!',
+      'Är sjuk igen...',
+      'Idag skar jag bröd samtidigt som Kent Ekeroth. Våra blickar möttes inte.',
+      'Är det här en retflört?',
+      'Sitter och smuttar på te och slänger käft!',
+      'Svajpade ju vänster 😕',
+      'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\nTrendkänsliga rasister +/-\nKorta rasister +/-'
     ]
   },
 ]
