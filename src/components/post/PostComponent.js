@@ -55,7 +55,7 @@ class PostComponent extends Component {
       <div className="Post">
         <PostHeaderComponent />
         <div className="PostContent">
-          Hej Eriks {post.header}-grupp!
+          Hej Folkets {post.header}-grupp!
           <br/><br/>
           {post.content}
           <br/><br/>
