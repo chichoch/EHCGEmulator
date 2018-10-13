@@ -22,7 +22,7 @@ export const comments = [
       '💔',
       'Lyssnar på Skitsystem nu. Känns pyttelite bättre.',
       'SVARA!!!',
-      '¯\_(ツ)_/¯'
+      '¯\\_(ツ)_/¯',
     ]
   },
   {
@@ -46,12 +46,13 @@ export const comments = [
       'img': require('../pictures/anna_sager.jpg')
     },
     'comments': [
-      'Du är ett prutthål, Charlie.',
+      'Du är ett prutthål.',
       'Stockholm ++++++++!',
       'Tycker ända att Stockholm är världens bästa stad.',
       '🤤',
       'Namaste 🙏',
       'Allt gott',
+      "Don't @ me."
     ]
   },
   {
