@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   width: {(props) => props.width + 'px' || 100%}
+  initial-scale: 1;
 `
 
 export default class SizeWrapper extends Component {
