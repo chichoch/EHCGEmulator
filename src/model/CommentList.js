@@ -137,4 +137,4 @@ export const comments = [
       'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\n \nTrendkänsliga rasister +/-\nKorta rasister +/-'
     ]
   },
-]
+];
