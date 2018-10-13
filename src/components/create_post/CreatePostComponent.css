@@ -3,16 +3,29 @@
  padding: 15px;
  border-radius: 8px;
  width: 25rem;
+ margin-top: 8px;
 }
 
 .CreatePostHeader {
 
 }
 
+.TextareaAutosize {
+  width: 394px;
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 textarea {
   width: 100%;
   resize: vertical;
-  overflow: hidden;
+  margin-top: 4px;
 }
 
 .CreatePostSubmit {

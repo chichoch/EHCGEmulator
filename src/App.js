@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CreatePostComponent from './components/create_post/CreatePostComponent';
 import PostComponent from './components/post/PostComponent';
+import SizeWrapper from './components/SizeWrapper';
 
 class App extends Component {
   constructor(props) {
@@ -28,13 +29,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <CreatePostComponent className="CreatePost"
-          onSubmit={this.handlePostSubmit}
-          post={this.state.post}
-        />
-        {this.state.posts.map((obj, i) => <PostComponent post={obj} key={i} />)}
-      </div>
+      <SizeWrapper>
+        <div>
+          <CreatePostComponent className="CreatePost"
+            onSubmit={this.handlePostSubmit}
+            post={this.state.post}
+          />
+          {this.state.posts.map((obj, i) => <PostComponent post={obj} key={i} />)}
+        </div>
+      </SizeWrapper>
     );
   }
 }

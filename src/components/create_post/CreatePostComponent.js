@@ -49,7 +49,7 @@ export default class CreatePostComponent extends Component {
     return (
       <form className="CreatePost" onSubmit={this.handleSubmit}>
         <div className="CreatePostHeader">
-        Hej Eriks
+        Hej Folkets {' '}
           <input
             type="text"
             value={this.state.header}
@@ -57,6 +57,7 @@ export default class CreatePostComponent extends Component {
         -grupp!
         </div>
         <TextareaAutosize
+          className="TextareaAutosize"
           rows={3}
           onChange={this.handleContentChange}
           value={this.state.content}
@@ -67,7 +68,7 @@ export default class CreatePostComponent extends Component {
             type="text"
             value={this.state.footer}
             onChange={this.handleFooterChange} />
-          +/-?
+          {' '} +/-?
         </div>
         <div className="CreatePostSubmit">
           <button
