@@ -22,6 +22,7 @@ export const comments = [
       '💔',
       'Lyssnar på Skitsystem nu. Känns pyttelite bättre.',
       'SVARA!!!',
+      '¯\_(ツ)_/¯'
     ]
   },
   {
@@ -101,7 +102,7 @@ export const comments = [
       'Jag älskar fan gitarrsolon och gitarrister.',
       'Någon som behöver underhållning på sitt bröllop?',
       'Jag är vegan.',
-      'Är det här en reflört?'
+      'Är det här en retflört?'
     ]
   },
   {
@@ -132,7 +133,7 @@ export const comments = [
       'Är det här en retflört?',
       'Sitter och smuttar på te och slänger käft!',
       'Svajpade ju vänster 😕',
-      'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\nTrendkänsliga rasister +/-\nKorta rasister +/-'
+      'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\n \nTrendkänsliga rasister +/-\nKorta rasister +/-'
     ]
   },
 ]
