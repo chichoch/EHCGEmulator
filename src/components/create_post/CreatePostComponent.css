@@ -2,7 +2,7 @@
  background: white;
  padding: 15px;
  border-radius: 8px;
- width: 25rem;
+ width: 21rem;
  margin-top: 8px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .TextareaAutosize {
-  width: 394px;
+  width: 330px;
   border-radius: 2px;
   border-color: rgba(0, 0, 0, 0.1);
 }
