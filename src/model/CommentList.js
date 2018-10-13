@@ -9,6 +9,7 @@ export const comments = [
       'EDDIE MEDUZA!',
       'Man måste få vila ibland.',
       'Kollade ikapp Westworld och handmaids och åt godis och drack folköl SÅATTEH GANSKA BUSY',
+      'Katarina Janouch'
     ]
   },
   {
@@ -23,6 +24,7 @@ export const comments = [
       'Lyssnar på Skitsystem nu. Känns pyttelite bättre.',
       'SVARA!!!',
       '¯\\_(ツ)_/¯',
+      'Dominic?!'
     ]
   },
   {
