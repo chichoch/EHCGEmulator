@@ -43,7 +43,6 @@ class PostComponent extends Component {
   generateRecursiveTimeoutWithRandomInterval = () => {
     this.addComments();
     const interval = getRandomTime();
-    console.log(interval);
     setTimeout(() => {
       this.generateRecursiveTimeoutWithRandomInterval();
     }, interval);
