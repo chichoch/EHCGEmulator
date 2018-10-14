@@ -24,7 +24,7 @@ export const comments = [
       'Lyssnar på Skitsystem nu. Känns pyttelite bättre.',
       'SVARA!!!',
       '¯\\_(ツ)_/¯',
-      'Dominic?!'
+      'Är detta Dominic!?'
     ]
   },
   {
@@ -101,10 +101,11 @@ export const comments = [
       'img': require('../pictures/tor_nyman.jpg')
     },
     'comments': [
-      'Stockholm är bäst. Jag är vegan.',
+      'STOCKHOLM STOCKHOLM STAD I VÄRLDEN',
       'Jag älskar fan gitarrsolon och gitarrister.',
       'Någon som behöver underhållning på sitt bröllop?',
       'Jag är vegan.',
+      'Katter är sämst.',
       'Är det här en retflört?'
     ]
   },
