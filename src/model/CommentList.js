@@ -24,7 +24,8 @@ export const comments = [
       'Lyssnar på Skitsystem nu. Känns pyttelite bättre.',
       'SVARA!!!',
       '¯\\_(ツ)_/¯',
-      'Är detta Dominic!?'
+      'Är detta Dominic!?',
+      'KRÄKS OCH SPYR!',
     ]
   },
   {
@@ -55,7 +56,8 @@ export const comments = [
       '🤤',
       'Namaste 🙏',
       'Allt gott',
-      "Don't @ me."
+      "Don't @ me.",
+      'Gillar och delar',
     ]
   },
   {
@@ -107,7 +109,8 @@ export const comments = [
       'Någon som behöver underhållning på sitt bröllop?',
       'Jag är vegan.',
       'Katter är sämst.',
-      'Är det här en retflört?'
+      'Är det här en retflört?',
+      'Jag har en stor kuk',
     ]
   },
   {
@@ -178,6 +181,7 @@ export const comments = [
       'Herregud',
       'Ja jag är straight edge och??',
       'Jag bangar aldrig på att likea en riktigt fuktig meme',
+      'Varning! På Slakthuset får man redbull cola när man beställer cola',
     ]
   },
 ];
