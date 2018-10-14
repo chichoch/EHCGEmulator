@@ -8,7 +8,7 @@ export default class PostHeaderComponent extends Component {
       <div className="PostHeaderComponent">
         <AuthorComponent />
         <b className="PostHeaderText">
-          Du 👉 Eriks hardcore-grupp
+          Du 👉 Folkets hardcore-grupp
         </b>
       </div>
     );
