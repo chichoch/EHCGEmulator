@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const comments = [
   {
     'author' : {
@@ -55,7 +57,7 @@ export const comments = [
       'Tycker ända att Stockholm är världens bästa stad.',
       '🤤',
       'Namaste 🙏',
-      'Allt gott',
+      <b style={{color: '#9b29b2'}}>Allt gott</b>,
       "Don't @ me.",
       'Gillar och delar',
     ]
@@ -182,6 +184,76 @@ export const comments = [
       'Ja jag är straight edge och??',
       'Jag bangar aldrig på att likea en riktigt fuktig meme',
       'Varning! På Slakthuset får man redbull cola när man beställer cola',
+      'Är det HC?',
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Anton Gåbort',
+      'img': require('../pictures/anton_gobbert.jpg')
+    },
+    'comments': [
+      'Klart du var! Men du slutade med det och började supa istället! Som en rimlig människa!!',
+      'Folk är ju förjävliga alltså!',
+      'VALFJUSKISAR PÅ KONTOREN!',
+      'Bekräftat.. Copenhagen is the fuckin country....',
+      'Finns det på Twitter?',
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Sara Håkansson',
+      'img': require('../pictures/sara_håkansson.jpg')
+    },
+    'comments': [
+      'Jaha. Jag var scout när jag var liten!!!!',
+      'NU JÄVLAR ÄR DET PRIDEFEST HÖRNI!',
+      'Alltså! 💕 älskar även uttrycket "liten tjomme"',
+      'Du kan suga bajs',
+      'Nu har jag åkt tåg i cirka 3 minuter och är redan uttråkad. Please underhåll mig!',
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Martin Ghokasson',
+      'img': require('../pictures/artin.jpg')
+    },
+    'comments': [
+      'Jag är vegan.',
+      'Jag är inte bitter.',
+      'Dessa småglin..',
+      'Låt tårarna komma!',
+      'Majoriteten av de jag spelar med Pokémon är ju äldre än mig och jag är 33\n \nBtw när vi möttes på Copenhell fick jag slåss med en massa vuxna människor om pokégymmen som fanns på festivalen. Att få halvvägs till guld på knappt tre dagar är en bedrift du bara får av att nöta mot en massa motståndare. Dvs det var en massa spelare på plats som du servade mat till.',
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Andreas Rehborg',
+      'img': require('../pictures/andreas_rehnberg.jpg')
+    },
+    'comments': [
+      'Tjeba',
+      "För att inte nämna det frustrerande pruttljudet ifrån en ketchupflaska när en bara vill ha ketchup.. 😢",
+      'Det regnar över huvudstan! 🤤🤤🤤/🤤🤤🤤?',
+      <b style={{color: '#9b29b2'}}>You got this !</b>,
+      'Ge det här inlägget ett like tack',
     ]
   },
 ];
+
+// <b style={{color: '#9b29b2'}}>{this.props.children}</b>;
+/*
+  {
+    'author' : {
+      'name': '',
+      'img': require('../pictures/.jpg')
+    },
+    'comments': [
+      '',
+      '',
+      '',
+      '',
+      '',
+    ]
+  },
+*/
