@@ -40,6 +40,7 @@ export const comments = [
       'Ligga?',
       'Finns denna varan kvar?',
       'Håll käften.',
+      'Jag är vegan.'
     ]
   },
   {
@@ -138,6 +139,32 @@ export const comments = [
       'Sitter och smuttar på te och slänger käft!',
       'Svajpade ju vänster 😕',
       'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\n \nTrendkänsliga rasister +/-\nKorta rasister +/-'
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Henke Blomqvizt',
+      'img': require('../pictures/henrik_blomkvist.jpg')
+    },
+    'comments': [
+      'Bra sammanfattning!',
+      'Contorture är Göteborgs bästa band.',
+      'Du får gärna ringa mig (dock helst inte 04.08) nästa gång de spelar Ulcerate eller Imperial Triumphant på P3...',
+      'Jag saknar MIG SJÄLV #kräunkt',
+      'Käng i tågtunneln, det är livet det'
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Johan Malm',
+      'img': require('../pictures/johan_malm.jpg')
+    },
+    'comments': [
+      'Ja, fast skulle du välja ostbågar som fingrar eller rövhål som händer?',
+      'Äntligen lite bra rockklassiker',
+      'Det här jävla mobilsamhället har skadat mig',
+      'Jag drömde att jag räddade en katt från att leverera pizza. Den fick springa runt med en pizza som den bar på en tallrik som satt fast på en lång stång som var fäst i kattens huvud.',
+      'Du måste välja. Sprutor fulla med Heroin eller små små pizzor till fingrar.',
     ]
   },
 ];
