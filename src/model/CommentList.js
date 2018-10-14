@@ -1,4 +1,8 @@
 import React from 'react';
+import Korven from '../components/Korven';
+
+const alltGott = <b style={{color: '#9b29b2'}}>Allt gott</b>;
+const youGotThis = <b style={{color: '#9b29b2'}}>You got this !</b>;
 
 export const comments = [
   {
@@ -57,7 +61,7 @@ export const comments = [
       'Tycker ända att Stockholm är världens bästa stad.',
       '🤤',
       'Namaste 🙏',
-      <b style={{color: '#9b29b2'}}>Allt gott</b>,
+      alltGott,
       "Don't @ me.",
       'Gillar och delar',
     ]
@@ -72,6 +76,7 @@ export const comments = [
       'Jag är en av Sveriges främsta antifascister.',
       'Du är så jävla bölig.',
       'Om ingen diskuterar det här med mig så blockar jag Daniel Jaller igen.',
+      'Jag gillar inte riktigt de antisemitiska strömningarna i den här tråden.',
     ]
   },
   {
@@ -106,6 +111,7 @@ export const comments = [
       'img': require('../pictures/tor_nyman.jpg')
     },
     'comments': [
+      <Korven/>,
       'STOCKHOLM STOCKHOLM STAD I VÄRLDEN',
       'Jag älskar fan gitarrsolon och gitarrister.',
       'Någon som behöver underhållning på sitt bröllop?',
@@ -143,7 +149,8 @@ export const comments = [
       'Är det här en retflört?',
       'Sitter och smuttar på te och slänger käft!',
       'Svajpade ju vänster 😕',
-      'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\n \nTrendkänsliga rasister +/-\nKorta rasister +/-'
+      'Idag har Kent en pappersservett över magen så han inte ska spilla sin köttbit på fina kavajen.\nHade även turen att möta Hanif Bali som har en trendig jeansjacka dagen till ära.\n \nTrendkänsliga rasister +/-\nKorta rasister +/-',
+      'Mellan benen sitter könet!!!!'
     ]
   },
   {
@@ -156,7 +163,8 @@ export const comments = [
       'Contorture är Göteborgs bästa band.',
       'Du får gärna ringa mig (dock helst inte 04.08) nästa gång de spelar Ulcerate eller Imperial Triumphant på P3...',
       'Jag saknar MIG SJÄLV #kräunkt',
-      'Käng i tågtunneln, det är livet det'
+      'Käng i tågtunneln, det är livet det',
+      <Korven/>,
     ]
   },
   {
@@ -185,6 +193,7 @@ export const comments = [
       'Jag bangar aldrig på att likea en riktigt fuktig meme',
       'Varning! På Slakthuset får man redbull cola när man beställer cola',
       'Är det HC?',
+      <Korven/>,
     ]
   },
   {
@@ -232,28 +241,75 @@ export const comments = [
       'img': require('../pictures/andreas_rehnberg.jpg')
     },
     'comments': [
+      <Korven/>,
       'Tjeba',
       "För att inte nämna det frustrerande pruttljudet ifrån en ketchupflaska när en bara vill ha ketchup.. 😢",
       'Det regnar över huvudstan! 🤤🤤🤤/🤤🤤🤤?',
-      <b style={{color: '#9b29b2'}}>You got this !</b>,
+      youGotThis,
       'Ge det här inlägget ett like tack',
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Viktig Svensson',
+      'img': require('../pictures/viktor_svensson.jpg')
+    },
+    'comments': [
+      <Korven/>,
+      'Jag är straight edge',
+      'LÄGET DÅ, KORIANDERÄLSKARE?!',
+      'VARNING / mod',
+      alltGott,
+      'Om folket vill så kommer vi att kliva in och peka med hela handen!',
+      <Korven/>,
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Viktig Svensson',
+      'img': require('../pictures/viktor_svensson.jpg')
+    },
+    'comments': [
+      <Korven/>,
+      'Jag är straight edge',
+      'LÄGET DÅ, KORIANDERÄLSKARE?!',
+      'VARNING / mod',
+      alltGott,
+      'Om folket vill så kommer vi att kliva in och peka med hela handen!',
+      <Korven/>,
+    ]
+  },
+  {
+    'author' : {
+      'name': 'Love ❤️ Conradsson',
+      'img': require('../pictures/love_konradsson.jpg')
+    },
+    'comments': [
+      'Guinness +/- ?',
+      'Sliggehöns.',
+      'Alkholen började gå ur kroppen runt 8, har varit lite smågrinig sen dess. Sen har jag haft sån jäkla bakis mage idag också.',
+      'fedemangel',
+      'pissefisser',
+      <a href='https://www.youtube.com/watch?v=5thSzKj3xvU'>CRUSADE</a>,
     ]
   },
 ];
 
+
 // <b style={{color: '#9b29b2'}}>{this.props.children}</b>;
+
 /*
-  {
-    'author' : {
-      'name': '',
-      'img': require('../pictures/.jpg')
-    },
-    'comments': [
-      '',
-      '',
-      '',
-      '',
-      '',
-    ]
+
+{
+  'author' : {
+    'name': '',
+    'img': require('../pictures/.jpg')
   },
+  'comments': [
+    '',
+    '',
+    '',
+    '',
+  ]
+},
 */
