@@ -9,4 +9,11 @@ _Allt gott._
 [https://arcane-eyrie-21621.herokuapp.com/](https://arcane-eyrie-21621.herokuapp.com/)
 
 ---
+## Installation
+
+1. Clone the repo
+2. `npm install`
+3. Done
+
+---
  UPPDATERAS
