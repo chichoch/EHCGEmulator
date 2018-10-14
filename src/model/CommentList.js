@@ -293,6 +293,20 @@ export const comments = [
       <a href='https://www.youtube.com/watch?v=5thSzKj3xvU'>CRUSADE</a>,
     ]
   },
+  {
+    'author' : {
+      'name': 'Johan Petter Niklas Andreas Salt&Pepper Malmlöf ',
+      'img': require('../pictures/johan_malmlöf.jpg')
+    },
+    'comments': [
+      'Någon blev riktigt jävla arg!',
+      <Korven/>,
+      'Är det HC?',
+      alltGott,
+      'Kan vi komma överens om att popcorn är världens bästa snacks?',
+      'Min kollega spelar svensk reggae på högtalarna. Jag funderar på att säga upp mig på plats.\nBorde jag?\n \nSvensk reggae -/-',
+    ]
+  },
 ];
 
 
