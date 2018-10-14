@@ -167,4 +167,17 @@ export const comments = [
       'Du måste välja. Sprutor fulla med Heroin eller små små pizzor till fingrar.',
     ]
   },
+  {
+    'author' : {
+      'name': 'Danne Spjutsäter',
+      'img': require('../pictures/daniel_pilsäter.jpg')
+    },
+    'comments': [
+      'Jag är vegan.',
+      'JAG KOKAR',
+      'Herregud',
+      'Ja jag är straight edge och??',
+      'Jag bangar aldrig på att likea en riktigt fuktig meme',
+    ]
+  },
 ];
